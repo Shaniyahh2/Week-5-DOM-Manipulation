@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyBlog.com</title>
+    <link rel="stylesheet" href="10_css.css">
+    <script defer src="10_js.js"></script>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <button>Recent Articles</button>
+        <button>Services</button>
+        <button>Mission</button>
+        <button>About Us</button>
+    </nav>
+</header>
+
+<main>
+    <h1>MyBlog.com</h1>
+
+    <div id="toggleButtons">
+        <button id="showFilterBtn">Filter Articles</button>
+        <button id="showFormBtn">Add New Article</button>
+    </div>
+
+    <!-- FILTER MENU -->
+    <form id="filterContent">
+        <h3>Filter by Article Type</h3>
+        <label><input type="checkbox" id="filterOpinion" checked> Opinion</label>
+        <label><input type="checkbox" id="filterRecipe" checked> Recipe</label>
+        <label><input type="checkbox" id="filterUpdate" checked> Update</label>
+    </form>
+
+    <!-- ADD NEW ARTICLE FORM -->
+    <form id="newContent">
+        <h3>Add New Article</h3>
+
+        <div class="formRow">
+            <label>Title:</label>
+            <input type="text" id="newTitle">
+        </div>
+
+        <div class="formRow">
+            <label>Type:</label>
+            <label><input type="radio" name="newType" value="opinion"> Opinion</label>
+            <label><input type="radio" name="newType" value="recipe"> Recipe</label>
+            <label><input type="radio" name="newType" value="update"> Update</label>
+        </div>
+
+        <div class="formRow">
+            <label>Text:</label>
+            <textarea id="newText"></textarea>
+        </div>
+
+        <button type="button" id="addArticleBtn">Add New Article</button>
+    </form>
+
+    <h2 style="text-align:center;">Recent Journal Articles</h2>
+
+    <div id="articleList">
+        <!-- Articles will appear here -->
+    </div>
+
+</main>
+
+<footer>
+    <p>Contact Us!</p>
+    <address>
+        <div>
+            <p>Phone:</p><p>(555) 123-1234</p>
+            <p>Email:</p><p>contact@myDomain.com</p>
+            <p>Address:</p><p>111 Fictional Place</p>
+            <p></p><p>Orlando, FL 32825</p>
+        </div>
+    </address>
+</footer>
+
+</body>
+</html>
